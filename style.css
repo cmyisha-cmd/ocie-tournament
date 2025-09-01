@@ -1,45 +1,63 @@
 
+/* Global Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #3b0a45, #5c2b91);
+  font-family: 'Arial Black', sans-serif;
+  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
   color: white;
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-header {
+
+.container {
+  max-width: 800px;
   padding: 20px;
 }
-header img {
-  max-height: 100px;
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
 }
-h1, h2 {
-  margin: 20px 0;
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-a, button {
-  display: inline-block;
-  margin: 10px;
-  padding: 10px 20px;
+
+/* Buttons */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.btn {
+  background: black;
+  color: white;
+  padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
-  background: #000;
-  color: #fff;
+  font-size: 1.2rem;
   font-weight: bold;
-  transition: 0.3s;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
 }
-a:hover, button:hover {
-  background: #444;
+
+.btn:hover {
+  background: #f72585;
+  transform: scale(1.05);
 }
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
+
+.btn.admin {
+  background: #ffba08;
+  color: black;
 }
-input, select {
-  width: 80%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 8px;
-  border: none;
+
+.btn.admin:hover {
+  background: #faa307;
 }
