@@ -2,24 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Register Player</title>
+  <title>Player Registration</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="subhero"><h1>Register as a Player</h1></header>
-  <main class="container">
-    <form id="registerForm" class="card form">
-      <input type="text" id="playerName" placeholder="Player full name" required />
-      <select id="eventChoice" required>
-        <option value="">Select Event</option>
-        <option value="shooting">Shooting Contest</option>
-        <option value="team">Team Tournament</option>
-      </select>
-      <button type="submit" class="btn">Submit Registration</button>
+  <div class="container">
+    <h1>Player Registration</h1>
+    <form id="registrationForm">
+      <label>Name: <input type="text" id="name" required></label><br>
+      <label>Age: <input type="number" id="age" required></label><br>
+      <label><input type="checkbox" id="shooting"> Shooting Contest</label><br>
+      <label><input type="checkbox" id="team"> Team Tournament</label><br>
+      <button type="submit" class="btn">Register</button>
     </form>
-    <p><a href="index.html" class="link">← Back to Home</a></p>
-  </main>
-  <script src="script.js"></script>
+    <a href="index.html" class="btn">Back to Home</a>
+  </div>
 </body>
 </html>
