@@ -1,31 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <img src="assets/logo.svg" alt="Ocie Tournament Logo" class="logo">
+  <header><img src="logo.png" alt="Ocie Tournament Logo"></header>
+  <div class="container">
     <h1>Admin Dashboard</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Registered Players</h2>
-      <ul id="adminPlayersList"></ul>
-    </section>
-    <section>
-      <h2>Add Score</h2>
-      <form id="scoreForm">
-        <input type="text" id="matchName" placeholder="Match (e.g. Team A vs Team B)" required>
-        <input type="text" id="matchScore" placeholder="Score (e.g. 21-18)" required>
-        <button type="submit" class="btn">Add Score</button>
-      </form>
-    </section>
-    <button id="resetBtn" class="btn">Reset Tournament</button>
-    <a href="index.html" class="btn">Logout</a>
-  </main>
-  <script src="script.js"></script>
+    <button onclick="resetTournament()">Reset Tournament</button>
+    <h2>Players</h2>
+    <ul id="adminPlayerList"></ul>
+    <a href="index.html">⬅ Back to Home</a>
+  </div>
 </body>
 </html>
