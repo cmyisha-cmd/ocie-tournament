@@ -1,1 +1,43 @@
-body { background: linear-gradient(to bottom, purple, black); color: white; }
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #2e0854, #000);
+  color: white;
+  text-align: center;
+}
+header {
+  padding: 20px;
+}
+.logo {
+  width: 80px;
+}
+h1, h2 {
+  margin: 10px 0;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: purple;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+}
+form {
+  margin: 20px auto;
+  max-width: 300px;
+  text-align: left;
+}
+label, input {
+  display: block;
+  margin: 8px 0;
+}
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+}
+td, th {
+  border: 1px solid white;
+  padding: 8px;
+}

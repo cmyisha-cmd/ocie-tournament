@@ -1,1 +1,31 @@
-<!DOCTYPE html><html><head><title>Dashboard</title></head><body><h1>Admin Dashboard</h1></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="assets/logo.svg" alt="Ocie Tournament Logo" class="logo">
+    <h1>Admin Dashboard</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Registered Players</h2>
+      <ul id="adminPlayersList"></ul>
+    </section>
+    <section>
+      <h2>Add Score</h2>
+      <form id="scoreForm">
+        <input type="text" id="matchName" placeholder="Match (e.g. Team A vs Team B)" required>
+        <input type="text" id="matchScore" placeholder="Score (e.g. 21-18)" required>
+        <button type="submit" class="btn">Add Score</button>
+      </form>
+    </section>
+    <button id="resetBtn" class="btn">Reset Tournament</button>
+    <a href="index.html" class="btn">Logout</a>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
