@@ -1,66 +1,45 @@
-body {
-  background: red !important;
-}
-
-/* Global Styles */
+/* Apply gradient background to the whole page */
 body {
   margin: 0;
-  font-family: 'Arial Black', sans-serif;
-  background: linear-gradient(135deg, #3a0ca3, #7209b7, #f72585);
+  font-family: Arial, sans-serif;
   color: white;
-  text-align: center;
+  background: linear-gradient(135deg, #4b0082, #800080, #000000); 
   min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.container {
-  max-width: 800px;
-  padding: 20px;
-}
-
+/* Style for the logo */
 .logo {
-  width: 150px;
+  width: 120px;
   margin-bottom: 20px;
 }
 
+/* Headline */
 h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 5px black;
 }
 
 /* Buttons */
-.button-group {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
-}
-
 .btn {
-  background: black;
-  color: white;
+  display: inline-block;
+  margin: 10px;
   padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-  transition: all 0.2s ease;
+  text-decoration: none;
+  color: white;
+  background: black;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background: #f72585;
+  background: #800080;
   transform: scale(1.05);
-}
-
-.btn.admin {
-  background: #ffba08;
-  color: black;
-}
-
-.btn.admin:hover {
-  background: #faa307;
 }
