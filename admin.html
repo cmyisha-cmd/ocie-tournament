@@ -1,1 +1,35 @@
-<!-- admin.html placeholder -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Admin Dashboard</h1>
+
+  <section>
+    <h2>All Players</h2>
+    <ul id="allPlayers"></ul>
+  </section>
+
+  <section>
+    <h2>Assign Teams</h2>
+    <button onclick="assignTeams()">Auto Assign Teams</button>
+    <div id="teams"></div>
+  </section>
+
+  <section>
+    <h2>Record Scores</h2>
+    <div id="scoreSection"></div>
+  </section>
+
+  <section>
+    <h2>Reset Tournament</h2>
+    <button onclick="resetTournament()">Reset All Data</button>
+  </section>
+
+  <a href="index.html">⬅ Back to Home</a>
+  <script src="script.js"></script>
+</body>
+</html>

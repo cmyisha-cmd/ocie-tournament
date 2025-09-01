@@ -1,1 +1,38 @@
-<!-- style.css placeholder -->
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f7f7;
+  color: #333;
+  text-align: center;
+}
+
+header, footer {
+  background: #222;
+  color: white;
+  padding: 1rem;
+}
+
+h1, h2 {
+  margin: 1rem 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.btn {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn.admin {
+  background: #e91e63;
+}
