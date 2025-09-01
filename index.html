@@ -7,26 +7,36 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>🏀 Ocie's 13th Birthday Tournament</h1>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>🏀 Ballin’ with Ocie — 13th Edition</h1>
+      <p class="tag">Official Tournament Hub</p>
+    </div>
   </header>
 
   <main>
-    <section class="intro">
-      <p>Welcome to the official tournament hub! 🎉</p>
-      <p>Choose an option below to get started:</p>
-    </section>
-
     <section class="actions">
-      <a class="btn" href="register.html">Register as Player</a>
-      <a class="btn" href="shooting.html">Shooting Contest</a>
-      <a class="btn" href="team.html">Team Tournament</a>
-      <a class="btn admin" href="admin.html">Admin Login</a>
+      <a class="card" href="register.html">
+        <h2>Register as Player</h2>
+        <p>Sign up for the shooting contest or team tourney.</p>
+      </a>
+      <a class="card" href="shooting.html">
+        <h2>Shooting Contest</h2>
+        <p>View leaderboard and add scores.</p>
+      </a>
+      <a class="card" href="team.html">
+        <h2>Team Tournament</h2>
+        <p>See rosters, matchups, and results.</p>
+      </a>
+      <a class="card admin" href="admin.html">
+        <h2>Admin Dashboard</h2>
+        <p>Manage players, teams, scores & reset.</p>
+      </a>
     </section>
   </main>
 
   <footer>
-    <p>Powered by Ocie Tourney • All Rights Reserved</p>
+    <p>© Ocie Tourney — All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>

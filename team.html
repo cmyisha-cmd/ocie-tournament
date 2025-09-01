@@ -2,13 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Team Tournament</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Team Tournament Players</h1>
-  <ul id="teamList"></ul>
-  <a href="index.html">⬅ Back to Home</a>
+  <header class="subhero"><h1>Team Tournament</h1></header>
+  <main class="container">
+    <section class="grid2">
+      <div class="card">
+        <h2>Team Rosters</h2>
+        <div id="teamRosters"></div>
+      </div>
+      <div class="card">
+        <h2>Matchups & Results</h2>
+        <ul id="gamesList" class="list"></ul>
+        <div class="grid">
+          <select id="gameSelect"></select>
+          <input id="homeScore" type="number" placeholder="Home score">
+          <input id="awayScore" type="number" placeholder="Away score">
+        </div>
+        <button class="btn" id="saveGameScore">Save Game Result</button>
+      </div>
+    </section>
+    <p><a href="index.html" class="link">← Back to Home</a></p>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

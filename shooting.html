@@ -2,13 +2,27 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shooting Contest</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Shooting Contest Players</h1>
-  <ul id="shootingList"></ul>
-  <a href="index.html">⬅ Back to Home</a>
+  <header class="subhero"><h1>Three-Point Shooting Contest</h1></header>
+  <main class="container">
+    <section class="card">
+      <h2>Leaderboard</h2>
+      <ol id="shootingLeaderboard" class="list"></ol>
+    </section>
+    <section class="card form">
+      <h2>Add / Update Score</h2>
+      <div class="grid">
+        <select id="shootingPlayer"></select>
+        <input type="number" id="shootingScore" placeholder="Score (0-30)" min="0" max="30">
+      </div>
+      <button class="btn" id="saveShootingScore">Save Score</button>
+    </section>
+    <p><a href="index.html" class="link">← Back to Home</a></p>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>

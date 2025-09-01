@@ -2,34 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Admin Dashboard</h1>
+  <header class="subhero"><h1>Admin Dashboard</h1></header>
+  <main class="container">
+    <section class="card">
+      <h2>All Players</h2>
+      <ul id="allPlayers" class="list"></ul>
+    </section>
 
-  <section>
-    <h2>All Players</h2>
-    <ul id="allPlayers"></ul>
-  </section>
-
-  <section>
-    <h2>Assign Teams</h2>
-    <button onclick="assignTeams()">Auto Assign Teams</button>
-    <div id="teams"></div>
-  </section>
-
-  <section>
-    <h2>Record Scores</h2>
-    <div id="scoreSection"></div>
-  </section>
-
-  <section>
-    <h2>Reset Tournament</h2>
-    <button onclick="resetTournament()">Reset All Data</button>
-  </section>
-
-  <a href="index.html">⬅ Back to Home</a>
+    <section class="grid2">
+      <div class="card">
+        <h2>Assign Teams (Auto)</h2>
+        <button class="btn" onclick="assignTeams()">Auto Assign</button>
+        <div id="teamsView" class="mt"></div>
+      </div>
+      <div class="card">
+        <h2>Reset Tournament</h2>
+        <button class="btn danger" onclick="resetTournament()">⚠ Reset & Reload Dummy Data</button>
+        <p class="muted">This clears all data and reloads default players, teams, and scores.</p>
+      </div>
+    </section>
+    <p><a href="index.html" class="link">← Back to Home</a></p>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
