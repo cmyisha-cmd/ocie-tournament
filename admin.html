@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Admin Login • Ballin' with Ocie</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo-link"><img class="site-logo" src="/logo.png" alt="Logo" /></a>
-    <div>
-      <h1>Admin Login</h1>
-      <p class="sub">Restricted area</p>
-    </div>
-  </header>
+  <header class="subhero"><h1>Admin Dashboard</h1></header>
+  <main class="container">
+    <section class="card">
+      <h2>All Players</h2>
+      <ul id="allPlayers" class="list"></ul>
+    </section>
 
-  <main class="login">
-    <div class="card">
-      <form id="adminLoginForm" class="form">
-        <label>Username
-          <input type="text" id="adminUser" required />
-        </label>
-        <label>Password
-          <input type="password" id="adminPass" required />
-        </label>
-        <button type="submit" class="btn primary">Login</button>
-      </form>
-      <p class="muted small">Demo credentials: <b>admin</b> / <b>password13</b></p>
-      <a class="btn" href="index.html">Back to Home</a>
-    </div>
+    <section class="grid2">
+      <div class="card">
+        <h2>Assign Teams (Auto)</h2>
+        <button class="btn" onclick="assignTeams()">Auto Assign</button>
+        <div id="teamsView" class="mt"></div>
+      </div>
+      <div class="card">
+        <h2>Reset Tournament</h2>
+        <button class="btn danger" onclick="resetTournament()">⚠ Reset & Reload Dummy Data</button>
+        <p class="muted">This clears all data and reloads default players, teams, and scores.</p>
+      </div>
+    </section>
+    <p><a href="index.html" class="link">← Back to Home</a></p>
   </main>
-
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

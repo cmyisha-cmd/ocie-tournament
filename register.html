@@ -1,65 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Register • Ballin' with Ocie</title>
-  <link rel="stylesheet" href="/style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Player</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="site-header">
-    <a href="index.html" class="logo-link"><img class="site-logo" src="/logo.png" alt="Logo" /></a>
-    <div>
-      <h1>Register</h1>
-      <p class="sub">Choose spectator or player and complete the form</p>
-    </div>
-  </header>
-
-  <main class="register">
-    <div class="card">
-      <div class="toggle">
-        <button id="btnSpectator" class="btn small primary">Spectator</button>
-        <button id="btnPlayer" class="btn small">Player</button>
-      </div>
-
-      <!-- Spectator form -->
-      <form id="formSpectator" class="form active">
-        <label>
-          Full Name
-          <input type="text" id="specName" required />
-        </label>
-        <label>
-          Number of Tickets (exclude players)
-          <input type="number" id="specTickets" min="1" value="1" required />
-        </label>
-        <button type="submit" class="btn primary">Submit Spectator Registration</button>
-      </form>
-
-      <!-- Player form -->
-      <form id="formPlayer" class="form">
-        <label>
-          Full Name
-          <input type="text" id="playerName" required />
-        </label>
-        <label>
-          Age
-          <input type="number" id="playerAge" min="5" max="18" required />
-        </label>
-        <fieldset class="checks">
-          <legend>Events</legend>
-          <label><input type="checkbox" id="evtShooting" /> Shooting Tournament</label>
-          <label><input type="checkbox" id="evtTeam" /> Team Tournament</label>
-        </fieldset>
-        <button type="submit" class="btn primary">Submit Player Registration</button>
-      </form>
-    </div>
-
-    <div class="card">
-      <a class="btn" href="players.html">View Registered Players & Spectators</a>
-      <a class="btn accent" href="index.html">Back to Home</a>
-    </div>
+  <header class="subhero"><h1>Register as a Player</h1></header>
+  <main class="container">
+    <form id="registerForm" class="card form">
+      <input type="text" id="playerName" placeholder="Player full name" required />
+      <select id="eventChoice" required>
+        <option value="">Select Event</option>
+        <option value="shooting">Shooting Contest</option>
+        <option value="team">Team Tournament</option>
+      </select>
+      <button type="submit" class="btn">Submit Registration</button>
+    </form>
+    <p><a href="index.html" class="link">← Back to Home</a></p>
   </main>
-
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
