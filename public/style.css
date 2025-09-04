@@ -1,94 +1,17 @@
-:root{
-  --purple:#5b2a86;
-  --purple-dark:#3b1c5a;
-  --orange:#ff7f11;
-  --white:#ffffff;
-  --black:#000000;
-}
-*{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color:var(--white);
-  background: radial-gradient(1000px 600px at top right, rgba(255,127,17,.25), transparent 50%),
-              linear-gradient(160deg, var(--purple) 0%, var(--purple-dark) 60%, #12071e 100%);
-  background-attachment: fixed;
+/* Background gradient */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #4b0082, #800080, #ff7f50);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.site-header{
-  display:flex; align-items:center; gap:16px;
-  padding:18px 20px; border-bottom:1px solid rgba(255,255,255,.12);
-  background: rgba(0,0,0,.25); backdrop-filter: blur(6px);
-}
-.site-logo{height:72px; width:auto; border-radius:12px}
-.sub{opacity:.85; margin:.25rem 0 0}
-.small{font-size:.9rem}
-.muted{opacity:.8}
-.logo-link{display:inline-flex}
-
-.home, .register, .lists, .login, .dashboard{padding:24px; max-width:1100px; margin:0 auto}
-.card{
-  background: rgba(0,0,0,.35);
-  border: 1px solid rgba(255,255,255,.08);
-  border-radius:16px; padding:18px; margin:12px 0;
-  box-shadow: 0 8px 40px rgba(0,0,0,.25);
-}
-.info-row{display:grid; grid-template-columns:repeat(3,1fr); gap:12px}
-.mini{background: rgba(255,255,255,.05); border-radius:12px; padding:12px}
-
-.actions{display:flex; flex-wrap:wrap; gap:10px}
-.btn{
-  display:inline-block; border:0; border-radius:12px; padding:12px 18px;
-  background:#111; color:#fff; text-decoration:none; font-weight:700;
-  transition:.2s transform, .2s background, .2s box-shadow; cursor:pointer;
-  box-shadow:0 6px 18px rgba(0,0,0,.35);
-}
-.btn:hover{transform:translateY(-1px); background:#222}
-.btn.primary{background:var(--orange); color:#000}
-.btn.primary:hover{background:#ffa64d}
-.btn.accent{background:var(--purple);}
-.btn.accent:hover{background:#7543a8}
-.btn.small{padding:8px 12px; font-weight:600; border-radius:10px}
-.btn.danger{background:#b00020}
-.btn.danger:hover{background:#cf142b}
-
-.form{display:none; gap:12px; flex-direction:column}
-.form.active{display:flex}
-label{display:flex; flex-direction:column; gap:6px; text-align:left}
-input, select{
-  padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.25);
-  background: rgba(255,255,255,.08); color:#fff; outline:none;
-}
-fieldset{border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px; text-align:left}
-.checks label{flex-direction:row; align-items:center; gap:10px}
-.row{display:flex; gap:10px; align-items:center}
-
-.grid{display:grid; grid-template-columns: repeat(2, 1fr); gap:12px}
-.card.wide{grid-column: span 2}
-
-.list{list-style:none; padding-left:0; margin:0}
-.list li{padding:8px 6px; border-bottom:1px dashed rgba(255,255,255,.15)}
-
-/* Simple bracket */
-.bracket{
-  display:grid; grid-template-columns: repeat(4, 1fr); gap:10px; align-items:stretch;
-}
-.round{display:flex; flex-direction:column; gap:10px}
-.match{
-  background: rgba(255,255,255,.05); padding:10px; border-radius:10px; border:1px solid rgba(255,255,255,.1);
-}
-.match .score input{
-  width:48px; text-align:center; margin-left:6px;
-  background: rgba(0,0,0,.25); color:#fff; border:1px solid rgba(255,255,255,.2);
-  border-radius:8px; padding:6px;
-}
-
-@media (max-width: 900px){
-  .info-row{grid-template-columns:1fr}
-  .grid{grid-template-columns:1fr}
-  .card.wide{grid-column:1}
-}
+/* Container */
 .container {
   max-width: 600px;
   padding: 20px;
@@ -99,3 +22,41 @@ fieldset{border:1px solid rgba(255,255,255,.2); border-radius:12px; padding:12px
   display: block;
   max-width: 200px;
   margin: 0 auto 20px;
+}
+
+/* Title */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+.date {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #800080; /* purple hover */
+}
+
+.admin {
+  background: #ff7f50; /* orange for admin */
+}
