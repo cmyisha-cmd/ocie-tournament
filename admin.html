@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Login • Ballin' with Ocie</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo-link"><img class="site-logo" src="/logo.png" alt="Logo" /></a>
+    <div>
+      <h1>Admin Login</h1>
+      <p class="sub">Restricted area</p>
+    </div>
+  </header>
+
+  <main class="login">
+    <div class="card">
+      <form id="adminLoginForm" class="form">
+        <label>Username
+          <input type="text" id="adminUser" required />
+        </label>
+        <label>Password
+          <input type="password" id="adminPass" required />
+        </label>
+        <button type="submit" class="btn primary">Login</button>
+      </form>
+      <p class="muted small">Demo credentials: <b>admin</b> / <b>password13</b></p>
+      <a class="btn" href="index.html">Back to Home</a>
+    </div>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Dashboard • Ballin' with Ocie</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo-link"><img class="site-logo" src="/logo.png" alt="Logo" /></a>
+    <div>
+      <h1>Admin Dashboard</h1>
+      <p class="sub">Manage teams, scores, and schedules</p>
+    </div>
+  </header>
+
+  <main class="dashboard">
+    <div class="card">
+      <div class="toolbar">
+        <button id="btnReset" class="btn danger">Reset Demo Data</button>
+        <a class="btn" href="players.html">View Public Lists</a>
+      </div>
+      <p class="muted">Tournament Date: <b>September 27, 2025</b></p>
+    </div>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Players</h2>
+        <ul id="adminPlayers" class="list"></ul>
+      </div>
+
+      <div class="card">
+        <h2>Teams</h2>
+        <div id="teamsContainer"></div>
+      </div>
+
+      <div class="card">
+        <h2>Shooting Order</h2>
+        <ol id="shootingOrder" class="list"></ol>
+        <div class="row">
+          <input id="shootName" placeholder="Add player to order" />
+          <button id="addShoot" class="btn small">Add</button>
+        </div>
+      </div>
+
+      <div class="card wide">
+        <h2>NBA-Style Bracket</h2>
+        <div id="bracket" class="bracket"></div>
+      </div>
+
+      <div class="card">
+        <h2>Games & Scores</h2>
+        <ul id="gamesList" class="list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>
