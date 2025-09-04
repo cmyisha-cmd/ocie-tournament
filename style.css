@@ -1,9 +1,8 @@
-/* Apply gradient background to the whole page */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   color: white;
-  background: linear-gradient(135deg, #4b0082, #800080, #000000); 
+  background: linear-gradient(135deg, #4b0082, #800080, #000000);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@ body {
   justify-content: center;
   text-align: center;
 }
+
 
 /* Style for the logo */
 .logo {
